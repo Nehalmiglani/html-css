@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+.font1{
+    font-family: 'Ubuntu', sans-serif;
+}
+header
+{
+    display:flex;
+    justify-content: space-between; 
+    /* background-color: aqua; */
+    align-items: center;
+    height:14vh;
+   
+    padding-left:70px;
+    padding-right:70px;
+}
+nav{
+   justify-content: space-around;
+   /* flex:2; */
+}
+
+.logo{
+    /* flex:1; */
+    display:flex;
+    /* padding-left:10px; */
+  
+    /* margin:6px; */
+}
+.nav-links a , li{
+
+ list-style: none;
+ text-decoration: none;
+ color:black;
+ padding:0px 30px; 
+}
+.nav-links{
+display: flex;
+    justify-content: space-around;
+    
+}
+.presentation{
+    display:flex;
+   height:80vh;
+   /* background-color: blueviolet; */
+     align-items: center;
+     padding-left:70px;
+    
+}
+.cover img{
+    width:35vw;
+    height:68vh;
+    padding-left:12vw;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1s ease-in-out;
+}
+.intro-text h1{
+    font-size: 6vh;
+    font-family:var(--font1);
+    background: linear-gradient(to right, #494964 ,#6f6f89);
+     -webkit-background-clip: text; 
+     -webkit-text-fill-color: transparent; 
+}
+*
+{
+    margin:0px;
+}
+
+.btn button{
+    padding:8px 33px;
+    font-family: var(--font1);
+    border-color:violet;
+    cursor:pointer;
+  
+}
+.btn{
+    padding-top:5vh;
+}
+.btn-select{
+    background-color: white;
+}
+.btn-add{
+    background-color: #c36cbb;
+    color:white;
+}
+.big{
+    width:43vw;
+    height:83vh;
+    opacity:0.3;
+    top:0px;
+    position: absolute;
+    right:0px;
+}
+.mid{
+    position: absolute;
+    top:32vh;
+    right:22vw;
+    width:55vw;
+    height:57vh;
+    opacity:0.6;
+}
+.small{
+
+    position: absolute;
+    top:65vh;
+    left:3.4vw;
+    height:35vh;
+    width:53vw;
+    opacity:0.7;
+}
+.laptop-select{
+   width:9%;
+   height:2.5%;
+  display:flex;
+  justify-content: space-around;
+position: absolute;
+right:24vw;
+bottom:6vh;
+  
+     
+}
+.laptop-select img{
+    padding:0px 10px;
+}
+
+@keyframes drop{
+    0%{
+        opacity:0;
+        transform:translateY(-80px);
+
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+
+@media screen and (max-width:1020px){
+  .presentation{
+      flex-direction: column;
+  }
+    .intro{
+        padding-top: 50px;
+        text-align: center;
+    }
+    .intro h1{
+        font-size: 23px;
+    }
+    .intro p{
+        font-size: 17px;
+    }
+    .cover img{
+       width:70%;
+        height:84%;
+    }
+    .laptop-select{
+        bottom:5%;
+        right:50%;
+       
+        transform:translate(50%,5%);
+    }
+    .small , .med , .big{
+        opacity:0.2;
+    }
+    .nav-links{
+       display:block;
+       text-align: left;
+       float:none;
+    
+    }
+  
+   
+    
+}
